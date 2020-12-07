@@ -7,7 +7,7 @@ Fs = 512;                   % samples per second
    Fc = 10;                     % hertz
    x = 0.02*sin(2*pi*Fc*t);
    x = x';
-   save('Data','x');
+   
    % Plot the signal versus time:
    figure;
    plot(t,x);
