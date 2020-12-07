@@ -1,0 +1,9 @@
+
+freq = 1;
+t = 2*pi;
+phase = 0;
+bias = 0;
+amp  = 0.2;
+
+input = amp*sin(freq*t+phase)+bias;
+plot(input,t);
