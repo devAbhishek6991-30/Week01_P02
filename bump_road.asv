@@ -1,9 +1,18 @@
 
-freq = 1;
-t = 2*pi;
-phase = 0;
-bias = 0;
-amp  = 0.2;
-
-input = amp*sin(freq*t+phase)+bias;
-plot(input,t);
+Fs = 512;                   % samples per second
+   dt = 1/Fs;                   % seconds per sample
+   StopTime = 0.25;             % seconds
+   t = (0:dt:StopTime-dt)';     % seconds
+   %%Sine wave:
+   Fc = 10;                     % hertz
+   x = (0.2*sin(2*pi*Fc*t));
+ 
+   %x= x';
+   save('Data','x');
+   
+  
+   % Plot the signal versus time:
+   figure;
+   plot(t,x);
+   xlabel('time (in seconds)');
+   title('Signal versus Time');

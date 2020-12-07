@@ -5,8 +5,10 @@ Fs = 512;                   % samples per second
    t = (0:dt:StopTime-dt)';     % seconds
    %%Sine wave:
    Fc = 10;                     % hertz
-   x = 0.2*sin(2*pi*Fc*t);
+   x = (0.2*sin(2*pi*Fc*t));
   
+   %x= x';
+   save('Data','x');
    
   
    % Plot the signal versus time:
