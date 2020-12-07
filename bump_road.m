@@ -1,11 +1,12 @@
-load('Data');
+
 Fs = 512;                   % samples per second
    dt = 1/Fs;                   % seconds per sample
    StopTime = 0.25;             % seconds
    t = (0:dt:StopTime-dt)';     % seconds
    %%Sine wave:
    Fc = 10;                     % hertz
-   x = 0.02*sin(2*pi*Fc*t);
+   x = 0.2*sin(2*pi*Fc*t);
+  
    
   
    % Plot the signal versus time:
