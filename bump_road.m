@@ -6,8 +6,8 @@ Fs = 512;                   % samples per second
    %%Sine wave:
    Fc = 10;                     % hertz
    x = 0.02*sin(2*pi*Fc*t);
-   x = x';
    
+  
    % Plot the signal versus time:
    figure;
    plot(t,x);
