@@ -1,3 +1,4 @@
+load('Data');
 Fs = 512;                   % samples per second
    dt = 1/Fs;                   % seconds per sample
    StopTime = 0.25;             % seconds
